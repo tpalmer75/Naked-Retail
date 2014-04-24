@@ -67,6 +67,7 @@ a
 
 #logo
 	display: inline-block
+	padding: 0 0 0 20px
 
 
 #menu
@@ -74,8 +75,8 @@ a
 	text-transform: uppercase
 	color: #898989
 	position: absolute
-	top: 44px
-	right: 0
+	top: 30px
+	right: 10px
 	ul
 		list-style: none
 	ul:first-child
@@ -96,22 +97,22 @@ a
 
 .section
 	border-top: 1px solid #898989
-	margin-top: 20px auto 60px auto
-	padding: 20px
-
+	margin: 20px auto 60px auto
 	.section-header 
 		text-transform: uppercase
 		letter-spacing: 4px
-		font-size: 16px
+		font-size: 18px
 		text-align: center
 		font-weight: bold
-		margin: 20px 0
+		margin: 40px 0 60px
+
+.owl-item
+	text-align: center
 
 .item
 	display: inline-block
 	width: 80%
 	height: 100%
-	padding: 20px
 	.name
 		text-align: center
 	img
@@ -121,28 +122,125 @@ a
 		margin: auto
 
 	.price
-		background: #76c043
+		background: #ccc
+
 		padding: 10px 10px
 		width: 50%
 		margin: auto
 		color: white
 		border-radius: 2px
 
+
+// ------ CAROUSEL CSS --------
+
+
 .carousel
 	max-width: 800px
 	margin: auto
 
-// #scroll-left, #scroll-right
-// 	position: absolute
-// 	top: 80px
-// 	color: #ddd
-// 	@include transition(color .25s)
-// 	&:hover
-// 		color: #898989
+.owl-prev, .owl-next
+	position: absolute
+	top: 80px
+	color: #ddd
+	font-family: FontAwesome
+	display: block
+	text-indent: -9999px
+	width: 40px
+	height: 40px
+	background-size: contain
+	@include transition(color .25s)
+	background-repeat: no-repeat
 
-// #scroll-left
-// 	left: 20px
+.owl-prev
+	left: -30px
+	background-image: url('../img/left-arrow.svg')
 
-// #scroll-right
-// 	right: 20px
+.owl-next
+	right: -46px
+	background-image: url('../img/right-arrow.svg')
+
+
+// ------- SUGGESTION FORM CSS ------
+
+.suggestion-form
+	text-align: center
+	display: block
+	margin: 40px auto 0
+	max-height: 44px
+	max-width: 600px
+	overflow: hidden
+	@include transition(max-height .5s)
+	.suggest
+		margin-bottom: 20px
+		input
+			width: 200px
+			margin-left: 10px
+	input
+		border: 1px solid #ccc
+		padding: 8px 10px
+		border-radius: 5px
+		font-size: 14px
+	.statement
+		padding: 25px 0
+		border-top: 1px solid #ccc
+		border-bottom: 1px solid #ccc
+		margin-bottom: 20px
+	.price
+		input
+			width: 50px
+			padding-left: 20px
+		.min, .max
+			display: inline-block
+			position: relative
+			.unit
+				position: absolute
+				left: 6px
+				top: 11px
+		.min
+			margin-right: 5px
+		.max
+			margin-left: 5px
+	select
+		background: #eee
+		padding: 8px 10px
+		border: none
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		color: #999
+		font-size: 14px
+		width: 202px
+	.brand
+		input
+			width: 180px
+	.left, .right
+		width: 48%
+		display: inline-block
+		margin: 10px 0
+	.left
+		text-align: right
+		margin-right: 5px
+	.right
+		text-align: left
+		margin-left: 5px
+	.submit
+		margin: 10px auto
+		display: block
+		background: #ccc
+		border: none
+		padding: 10px 20px
+		border-radius: 2px
+		font-size: 16px
+		color: white
+	.notify
+		font-size: 12px
+		color: #999
+		margin-left: 3px
+
+
+.activated
+	max-height: 400px
+	overflow: visible
+
+
 

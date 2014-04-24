@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -21,10 +22,11 @@
         });
       });
     </script>
+    <script src="js/activate.js"></script>
   </head>
   <body>
     <div id="wrapper">
-      <header><a id="logo" href="index.html"><img src="img/37grove-logo.svg"></a>
+      <header><a id="logo" href="index.html"><img src="img/nakedretail-letters.svg"></a>
         <div id="search-box"></div>
         <ul id="menu">
           <li><a href="#">How It Works</a></li>
@@ -34,12 +36,93 @@
         </ul>
       </header>
       <div id="content">
-        <div class="section">
-          <h2 class="section-header">Owl Test</h2>
+        <div id="now-available" class="section">
+          <h2 class="section-header">Now Available</h2>
           <div class="carousel">
             <div class="owl-carousel">
               <div class="item"><a href="#">
                   <div class="name">Bluetooth Speaker</div><img src="img/bluetooth-speaker.jpg"></a><a href="#">
+                  <div class="price">$24.47</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">GruffPack Battery</div><img src="img/gruffpack.jpg"></a><a href="#">
+                  <div class="price">$61.27</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">Boat Shoes</div><img src="img/timberland-classic-two-eye-boat-shoe.jpg"></a><a href="#">
+                  <div class="price">$35.92</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">Paisley Scarf</div><img src="img/paisley.jpg"></a><a href="#">
+                  <div class="price">$19.33</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">Clutch Bag</div><img src="img/clutch-bag.jpg"></a><a href="#">
+                  <div class="price">$25.55</div></a></div>
+            </div>
+          </div>
+        </div>
+        <div id="coming-soon" class="section">
+          <h2 class="section-header">Coming Soon</h2>
+          <div class="carousel">
+            <div class="owl-carousel">
+              <div class="item"><a href="#">
+                  <div class="name">Car Bluetooth Visor Speaker</div><img src="img/bluetooth-visor.png"></a><a href="#">
+                  <div class="price">$77.14</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">Hydration Bag</div><img src="img/hydration-bag.jpg"></a><a href="#">
+                  <div class="price">$31.56</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">Sky Lantern</div><img src="img/sky-lantern.jpg"></a><a href="#">
+                  <div class="price">$19.54</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">Striped Purse</div><img src="img/purse.jpg"></a><a href="#">
+                  <div class="price">$18.23</div></a></div>
+              <div class="item"><a href="#">
+                  <div class="name">Bluetooth Speaker</div><img src="img/bluetooth-speaker.jpg"></a><a href="#">
+                  <div class="price">$24.47</div></a></div>
+            </div>
+          </div>
+          <form action="#" class="suggestion-form">
+            <div class="suggest">Suggest a new product:
+              <input type="text" name="suggestion" class="suggestion-box">
+            </div>
+            <div class="statement">Awesome! That sounds like a great idea.</div>
+            <div class="price">
+              <div class="left">What's your ideal price range?</div>
+              <div class="right">
+                <div class="min">
+                  <input type="number" placeholder="min" class="min"><span class="unit">$</span>
+                </div> to
+                <div class="max">
+                  <input type="number" placeholder="max"><span class="unit">$</span>
+                </div>
+              </div>
+            </div>
+            <div class="category">
+              <div class="left">What category would you put this in?</div>
+              <div class="right">
+                <select>
+                  <option value="" disabled selected>Choose a category...</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="outdoors">Outdoors</option>
+                  <option value="home">Home</option>
+                </select>
+              </div>
+            </div>
+            <div class="brand">
+              <div class="left">What brand are you thinking of?</div>
+              <div class="right">
+                <input type="text" placeholder="Sony, Apple, none...">
+              </div>
+            </div>
+            <button class="submit">Submit</button>
+            <input type="checkbox" value="subscribe"><span class="notify">Notify me if my product becomes available</span>
+          </form>
+        </div>
+        <div id="past-deals" class="section">
+          <h2 class="section-header">Past Deals</h2>
+          <div class="carousel">
+            <div class="owl-carousel">
+              <div class="item"><a href="#">
+                  <div class="name">Picnic Basket</div><img src="img/picnic.jpg"></a><a href="#">
                   <div class="price">$24.47</div></a></div>
               <div class="item"><a href="#">
                   <div class="name">GruffPack Battery</div><img src="img/gruffpack.jpg"></a><a href="#">
